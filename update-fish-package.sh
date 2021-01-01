@@ -23,6 +23,11 @@ FISH_PACKAGE_GITHUB_REPO_URLS["hugo"]="https://github.com/gohugoio/hugo"
 
 FISH_PACKAGE_GITHUB_REPO_URL=${FISH_PACKAGE_GITHUB_REPO_URLS[${FISH_PACKAGE}]}
 
+if [ -z ${FISH_PACKAGE_GITHUB_REPO_URL} ]; then
+    echo "Could not find GitHub repo URL for ${FISH_PACKAGE}"
+    exit 1
+fi
+
 cd ${FISH_FOOD_LOCAL_GIT_REPO}
 
 git checkout ${DEFAULT_BRANCH}
