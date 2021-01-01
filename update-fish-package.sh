@@ -20,6 +20,7 @@ GITHUB_USERNAME=karuppiah7890
 declare -A FISH_PACKAGE_GITHUB_REPO_URLS
 
 FISH_PACKAGE_GITHUB_REPO_URLS["hugo"]="https://github.com/gohugoio/hugo"
+FISH_PACKAGE_GITHUB_REPO_URLS["terraform"]="https://github.com/hashicorp/terraform"
 
 FISH_PACKAGE_GITHUB_REPO_URL=${FISH_PACKAGE_GITHUB_REPO_URLS[${FISH_PACKAGE}]}
 
