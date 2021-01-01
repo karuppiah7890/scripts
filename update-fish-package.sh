@@ -17,7 +17,7 @@ FORK_REMOTE_REF=origin
 PR_BRANCH=update-${FISH_PACKAGE}
 GITHUB_USERNAME=karuppiah7890
 
-declare FISH_PACKAGE_GITHUB_REPO_URLS
+declare -A FISH_PACKAGE_GITHUB_REPO_URLS
 
 FISH_PACKAGE_GITHUB_REPO_URLS["hugo"]="https://github.com/gohugoio/hugo"
 
